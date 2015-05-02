@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+}
+
+body { 
+  height: 100%;
+  overflow-x: hidden; /*for  full responsive, otherwise cuts*/
+}
+
+
+
+/*LOOKIES*/
+{
+	background-image: url(subtle_carbon.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: scroll;
+	overflow: hidden;
+
+	background: url("fullscreen.png") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+	box-shadow: 0px 0px 0px 2px #555 inset;
+}
+
+@font-face {
+	font-family: big_noodle_titling;
+	src: url("big_noodle_titling.ttf") format("truetype");
+}
+
+	-webkit-transition: all .75s ;
+    -moz-transition: all .75s ;
+    -o-transition: all.75s ;
+    transition: all .75s ;
+
+/*media query width*/
+	
+@media only screen 
+and (max-width : 1280px) {
+	
+	.outer_container {
+		width: 100vw;
+
+		width: calc(100% - 120px);
+	}
+
+}
+
+/*Columns*/
+
+threecol {
+	width: 33.33vw;
+	float: left;
+}
+
+/*KEYFRAME ROTATE:*/
+.rotate {
+    -webkit-animation: spin 200s infinite linear;
+    -moz-animation: spin 200s infinite linear;
+    -ms-animation: spin 200s infinite linear;
+    -o-animation: spin 200s infinite linear;
+    animation: spin 200s infinite linear;
+ }
+ 
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/*KEYFRAME ROTATE:*/
+.scan {
+	-webkit-animation: scan 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+
+	-moz-animation: scan 4s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: scan 4s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: scan 4s;
+	-o-animation-iteration-count: infinite;
+
+	animation: scan 4s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@-moz-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@-ms-keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+}
+
+@keyframes scan
+{
+	0%   { bottom: -5%; }
+	100% { bottom: 105%; }
+
+}
